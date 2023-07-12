@@ -27,8 +27,6 @@ export class OpenExchangeRates {
       },
     });
 
-    console.log(await response.json());
-
     return parseExchangeRate((await response.json()));
   }
 }
